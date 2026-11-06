@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join DRACARYS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" /><link rel="stylesheet" href="css/auth.css" />
+  </head>
+  <body class="auth-page">
+    <main class="auth-shell">
+      <a class="auth-brand" href="index.html"><img src="assets/logo.png" alt="DRACARYS emblem" /><span>DRACARYS</span></a>
+      <section class="auth-card">
+        <p class="eyebrow">THE FIRST OATH</p><h1>Claim your <em>name.</em></h1>
+        <p class="auth-intro">An account grants entry to the portal; it does not grant official guild membership.</p>
+        <form id="register-form" novalidate>
+          <label>Username<input id="username" name="username" autocomplete="username" minlength="3" maxlength="24" pattern="[A-Za-z0-9_]+" required /><small>3–24 letters, numbers, or underscores.</small></label>
+          <label>Password<input id="password" name="password" type="password" autocomplete="new-password" minlength="8" required /></label>
+          <label>Confirm password<input id="confirm-password" name="confirm-password" type="password" autocomplete="new-password" minlength="8" required /></label>
+          <button class="button button--gold submit-button" type="submit">Create account</button>
+          <p id="form-message" class="form-message" aria-live="polite"></p>
+        </form>
+        <p class="auth-switch">Already sworn in? <a href="login.html">Sign in</a></p>
+      </section>
+    </main>
+    <script type="module" src="js/auth.js"></script>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#080605" />
+    <title>DRACARYS — Free Fire Guild</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section id="entry" class="entry" aria-label="DRACARYS opening">
+      <div class="entry-logo" aria-hidden="true"><span>DRAC</span><i>✦</i><span>ARYS</span></div>
+      <p class="entry-kicker">THE DRAGON KINGDOM AWAITS</p>
+      <button id="enter-site" class="button button--gold">Enter the realm</button>
+      <button id="skip-entry" class="text-button entry-skip">Skip opening</button>
+      <video id="entry-video" class="entry-video" muted playsinline preload="metadata">
+        <source src="assets/entry.mp4" type="video/mp4" />
+      </video>
+      <p id="entry-status" class="entry-status" aria-live="polite">Soundless cinematic opening</p>
+    </section>
+
+    <main id="site" class="site" hidden>
+      <div class="video-stage" aria-hidden="true">
+        <video id="background-video" autoplay muted loop playsinline preload="metadata" poster="assets/fallback-bg.jpg">
+          <source src="assets/background.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="page-wash"></div>
+
+      <header class="topbar container">
+        <a href="#home" class="brand" aria-label="DRACARYS home">
+          <img id="guild-logo" src="assets/logo.png" alt="DRACARYS emblem" />
+          <span id="brand-name">DRACARYS</span>
+        </a>
+        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#leaders">Leaders</a>
+          <a href="#members">Members</a>
+          <a href="#recruitment">Recruitment</a>
+          <a href="profile.html">Profile</a>
+          <a id="admin-link" href="admin/dashboard.html" hidden>Admin</a>
+          <a id="auth-link" href="login.html" class="nav-auth">Login</a>
+        </nav>
+      </header>
+
+      <section id="home" class="hero container">
+        <p class="eyebrow">EST. TO RULE THE BATTLEFIELD</p>
+        <h1>Rise beneath<br /><em>the dragon banner.</em></h1>
+        <p id="hero-copy" class="hero-copy">A home for the fearless. A legacy forged in fire.</p>
+        <div class="hero-actions">
+          <a class="button button--gold" href="#recruitment">Join the legacy</a>
+          <a class="button button--ghost" href="#members">Meet the guild</a>
+        </div>
+      </section>
+
+      <section id="about" class="section container split-section">
+        <div><p class="eyebrow">OUR BLOODLINE</p><h2>The legacy of <em>DRACARYS</em></h2></div>
+        <div><p id="guild-description" class="large-copy">A guild of discipline, loyalty, and relentless ambition. We do not simply enter the arena—we leave our mark upon it.</p></div>
+      </section>
+
+      <section id="leaders" class="section container">
+        <div class="section-heading"><div><p class="eyebrow">THE INNER CIRCLE</p><h2>Guild <em>leaders</em></h2></div><p>Those entrusted with the flame.</p></div>
+        <div id="leaders-grid" class="member-grid leaders-grid"><p class="empty-state">The council will be revealed soon.</p></div>
+      </section>
+
+      <section id="members" class="section container">
+        <div class="section-heading"><div><p class="eyebrow">THE DRAGON HOST</p><h2>Official <em>members</em></h2></div><p id="member-count">Approved members only.</p></div>
+        <div id="members-grid" class="member-grid"><p class="empty-state">No official members have been announced yet.</p></div>
+      </section>
+
+      <section id="recruitment" class="section container recruitment">
+        <p class="eyebrow">ANSWER THE CALL</p>
+        <h2>Are you worthy of the <em>banner?</em></h2>
+        <p id="recruitment-copy">Create your DRACARYS account, complete your profile, then send your membership request for the council’s review.</p>
+        <a href="register.html" class="button button--gold">Begin your oath</a>
+      </section>
+
+      <footer class="footer container"><span>© <span id="year"></span> <span id="footer-name">DRACARYS</span></span><span>Forged in fire. Bound by honor.</span></footer>
+    </main>
+
+    <noscript><p class="noscript">This portal needs JavaScript to securely connect to its account system.</p></noscript>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

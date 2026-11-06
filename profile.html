@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your DRACARYS Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" /><link rel="stylesheet" href="css/profile.css" />
+  </head>
+  <body class="inner-page">
+    <header class="simple-header container"><a class="brand" href="index.html"><img src="assets/logo.png" alt="DRACARYS emblem" /><span>DRACARYS</span></a><button id="sign-out" class="text-button">Sign out</button></header>
+    <main class="profile-layout container" id="profile-root" hidden>
+      <section class="profile-identity"><div class="avatar-wrap"><img id="avatar-preview" alt="Your avatar" /><span id="avatar-fallback">D</span></div><p class="eyebrow">PERSONAL RECORD</p><h1 id="profile-username">—</h1><span id="membership-badge" class="status-badge">Visitor</span><p id="joined-date"></p></section>
+      <section class="profile-panel"><div class="panel-heading"><div><p class="eyebrow">ACCOUNT DETAILS</p><h2>Your <em>profile</em></h2></div><span id="official-position" class="position-label">Not an official member</span></div>
+        <form id="profile-form" novalidate>
+          <label>Profile photograph<input id="avatar" type="file" accept="image/jpeg,image/png,image/webp" /><small>JPG, PNG, or WebP • up to 5 MB</small></label>
+          <label>Free Fire name<input id="ff-name" maxlength="40" placeholder="Your in-game name" /></label>
+          <label>Free Fire UID<input id="ff-uid" maxlength="24" inputmode="numeric" placeholder="Your UID" /></label>
+          <button type="submit" class="button button--gold">Save profile</button><p id="profile-message" class="form-message" aria-live="polite"></p>
+        </form>
+        <div id="membership-request" class="request-box" hidden><p>Ready to represent the guild?</p><button id="request-membership" class="button button--ghost">Request official membership</button></div>
+      </section>
+    </main>
+    <p id="profile-loading" class="page-message">Loading your record…</p>
+    <script type="module" src="js/profile.js"></script>
+  </body>
+</html>
